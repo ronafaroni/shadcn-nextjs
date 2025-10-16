@@ -1,0 +1,52 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Spaghetti Carbonara",
+      "image": "spaghetti-carbonara.jpg",
+      "time": 20,
+      "description": "A classic Italian dish with spaghetti, eggs, and cheese.",
+      "vegan": false
+    },
+    {
+      "id": 2,
+      "title": "Pasta Carbonara",
+      "image": "pasta-carbonara.jpg",
+      "time": 20,
+      "description": "A delicious pasta dish with bacon, eggs, and cheese.",
+      "vegan": true
+    },
+    {
+      "id": 3,
+      "title": "Vegetarian Lasagna",
+      "image": "vegetarian-lasagna.jpg",
+      "time": 20,
+      "description": "A delicious vegetarian lasagna with layers of pasta, vegetables, and cheese.",
+      "vegan": true
+    },
+    {
+      "id": 4,
+      "title": "Mushroom Risotto",
+      "image": "mushroom-risotto.jpg",
+      "time": 20,
+      "description": "A delicious mushroom risotto with rice, mushrooms, and cheese.",
+      "vegan": false
+    },
+    {
+      "id": 5,
+      "title": "Vegetarian Lasagna",
+      "image": "vegetarian-lasagna.jpg",
+      "time": 20,
+      "description": "A delicious vegetarian lasagna with layers of pasta, vegetables, and cheese.",
+      "vegan": true
+    },
+    {
+      "id": 6,
+      "title": "Mushroom Risotto",
+      "image": "mushroom-risotto.jpg",
+      "time": 20,
+      "description": "A delicious mushroom risotto with rice, mushrooms, and cheese.",
+      "vegan": false
+    }
+  ]
+}
