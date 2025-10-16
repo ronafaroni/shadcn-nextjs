@@ -24,9 +24,17 @@ export function ActiveThemeProvider({
   children: ReactNode;
   initialTheme?: string;
 }) {
-  const [activeTheme, setActiveTheme] = useState<string>(
-    () => initialTheme || DEFAULT_THEME
-  );
+  const [activeTheme, setActiveTheme] = useState<string>(() => {
+    // Cek localStorage terlebih dahulu
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("active-theme");
+      if (savedTheme) {
+        return savedTheme;
+      }
+    }
+    // Fallback ke initialTheme atau DEFAULT_THEME
+    return initialTheme || DEFAULT_THEME;
+  });
 
   useEffect(() => {
     Array.from(document.body.classList)
@@ -38,6 +46,9 @@ export function ActiveThemeProvider({
     if (activeTheme.endsWith("-scaled")) {
       document.body.classList.add("theme-scaled");
     }
+
+    // Simpan tema ke localStorage
+    localStorage.setItem("active-theme", activeTheme);
   }, [activeTheme]);
 
   return (

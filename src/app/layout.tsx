@@ -69,7 +69,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <ActiveThemeProvider initialTheme="lime">
+          <ActiveThemeProvider>
             {children}
             {/* <TailwindIndicator /> */}
             <Toaster position="top-center" />
